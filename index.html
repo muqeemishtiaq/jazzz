@@ -24,18 +24,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preload" href="fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <title>Jazz</title>
-  <body class="font-outfit bg-black text-white m-0 py-5 px-1">  </head>
+  <body class="font-outfit bg-black text-white  ">  </head>
 
  <div
     class="h-screen w-[360px] mx-auto rounded-lg bg-cover bg-center bg-no-repeat flex flex-col"
     style="background-image: url('./images/splash.png'); background-color: #000;"
   >
-       <img src="./images/splash.svg" alt="Banner" class="w-full"/>
+       <img src="./images/splash.svg" alt="Banner" class="w-full" loading="lazy"/>
       
   
       <div class="w-full px-4 flex flex-col items-center">
