@@ -5,7 +5,18 @@
     <link rel="preload" href="./images/splash.png" as="image">
   <link rel="preload" href="./images/splash.svg" as="image">
   
-   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
     <style>
       ::-webkit-scrollbar {
   display: none;
@@ -195,18 +206,6 @@
        
       </div>
     </div>
-     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              outfit: ["Outfit", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
     <script>
       document.getElementById('faq-toggle').addEventListener('click', function() {
   const faqContent = document.getElementById('faq-content');
