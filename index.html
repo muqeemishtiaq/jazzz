@@ -32,8 +32,8 @@
     </head>
   <body class="font-outfit bg-black text-white  ">  
 
- <div
-    class="h-screen w-[360px] mx-auto rounded-lg bg-cover bg-center bg-no-repeat flex flex-col"
+<div class="h-screen w-full lg:w-[320px] xl:w-[360px] 2xl:w-[600px] mx-auto rounded-lg bg-cover bg-center bg-no-repeat flex flex-col"
+
     style="background-image: url('./images/splash.png'); background-color: #000;"
   >
        <img src="./images/splash.svg" alt="Banner" class="w-full" loading="lazy"/>
@@ -41,107 +41,169 @@
   
       <div class="w-full px-4 flex flex-col items-center">
       
-        <div
-          class="w-[306px] h-[40px] rounded-[4px] bg-no-repeat bg-center bg-contain mt-4"
-          style="background-image: url('./images/logo.svg')"
-        ></div>
-        
-    
-        <div class="w-full mt-[30px] mb-[15px] flex flex-col items-center">
-          <p class="text-[13px] font-bold">Enter your mobile number:</p>
-          <input
-            type="tel"
-            pattern="03[0-9]{9}"
-            maxlength="11"
-            inputmode="numeric"
-            class="w-[270px] h-[38px] rounded-[6px] bg-white text-black px-3 mt-2 font-outfit text-[16px] focus:outline-none"
-            placeholder="03xxxxxxxxx"
-            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11);"
-            required
-          />
-        </div>
-      
-        <div class="w-full flex flex-col items-center mt-4">
-          <button
-            class="w-[230px] h-[44px] text-[18px] rounded-[8px] font-bold mt-[7px] text-black shadow-[0_0_30px_#FFD859] bg-[radial-gradient(circle_at_top,#FFD859,#FFC003)]"
-          >
-            START FREE TRIAL
-          </button>
-          <p class="mt-2 text-center text-[10px] text-[#6E6E6E]">
-            Service charges PKR 35 (tax inclusive) will be deducted <br/> from your Jazz Cash wallet every week.
-          </p>
-        </div>
-        
-       <div class="w-full mt-6">
-  <div class="flex items-center gap-[14px] mt-4 mb-2 whitespace-nowrap">
-    <div
-      class="w-[25px] h-[25px] bg-cover bg-center flex-shrink-0"
-      style="background-image: url('./images/i1.svg');"
-    ></div>
-    <p class="text-white text-[13px] text-left">
-      Play Unlimited Popular <span style="color: #FFCA20;">Mobile Games</span>
-    </p>
-  </div>
-  <div class="flex items-center gap-[14px] mt-7 mb-1 whitespace-nowrap">
-    <div
-      class="w-[25px] h-[25px] bg-cover bg-center flex-shrink-0"
-      style="background-image: url('./images/i2.svg');"
-    ></div>
-    <p class="text-white text-[13px] text-left">
-      Join Thrilling <span style="color: #FFCA20;">Tournaments & Win Big</span>
-    </p>
-  </div>
-  <div class="flex items-center gap-[14px] mt-7 mb-1 whitespace-nowrap">
-    <div
-      class="w-[25px] h-[25px] bg-cover bg-center flex-shrink-0"
-      style="background-image: url('./images/i3.svg');"
-    ></div>
-    <p class="text-white text-[13px] text-left">
-      Grab Vouchers for <span style="color: #FFCA20;">PUBG, FreeFire, PSN</span> & More
-    </p>
-  </div>
-  <div class="flex items-center gap-[14px] mt-7 mb-2 whitespace-nowrap">
-    <div
-      class="w-[25px] h-[25px] bg-cover bg-center flex-shrink-0"
-      style="background-image: url('./images/i4.svg');"
-    ></div>
-    <p class="text-white text-[13px] text-left">
-      Play Unlimited Popular <span style="color: #FFCA20;">Mobile Games</span>
-    </p>
-  </div>
-</div>
-        
-      
-        <div class="w-full mt-8">
-          <div class="flex justify-between items-center w-full">
-            <h2 class="text-[27px] text-[#FFCA20] font-bold">FAQs</h2>
-          <div 
-  id="faq-toggle"
-  class="w-[20px] h-[16px] bg-cover bg-center cursor-pointer transition-transform duration-300 transform"
-  style="background-image: url('./images/aad.svg');"
+<div
+  class="
+    w-[300px] h-[40px]
+    sm:w-[320px] 
+    md:w-[340px] 
+    lg:w-[250px] 
+    xl:w-[310px] 
+    2xl:w-[400px] 2xl:h-[60px]
+    rounded-[4px] bg-no-repeat bg-center bg-contain mt-4
+  "
+  style="background-image: url('./images/logo.svg')"
 ></div>
 
-          </div>
-          
-          <div id="faq-content" class="hidden mt-4  text-left">
-  <div class="text-left">
-    <h4 class="text-[12px] font-bold text-white text-left">What happens after 3-day free trial ends?</h4>
-    <hr class="w-full border border-[#505050]/50 mt-3" />
-    <p class="text-white mt-2 text-[12px] text-left">Service charges PKR 35 (tax inclusive) will be <br class="text-left"/> deducted from your Jazz Cash wallet every week.</p>
+
+
+
+
+
+<div class="w-full px-4 mt-[19px] mb-[10px] flex flex-col items-center">
+ <p class="text-[16px] font-bold text-center xl:text-[12px] 2xl:text-[20px]">Enter your mobile number:</p>
+
+  <input
+    type="tel"
+    pattern="03[0-9]{9}"
+    maxlength="11"
+    inputmode="numeric"
+    class="
+      w-full
+      md:w-[90%] 
+      xl:w-[80%] 
+      2xl:w-[70%] 
+      h-[48px] rounded-[6px] bg-white text-black px-3 mt-2 text-[18px] focus:outline-none
+    "
+    placeholder="03xxxxxxxxx"
+    oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11);"
+    required
+  />
+</div>
+
+
+
+
+      <div class="w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%] bg-white rounded-[12px] px-4 py-3 flex flex-col items-center mt-4 hidden">
+  <p class="text-[14px] font-bold text-red-600">Error</p>
+  <p class="text-[12px] text-black text-center mt-1">Something went wrong. Please try again</p>
+  
+</div>
+
+<div class="w-full flex flex-col items-center gap-1 px-9 mt-4 mb-2">
+
+  <div class="w-full flex justify-center">
+   <button
+  class="
+    w-[80%] h-[38px] text-[12px] 
+    rounded-[8px] font-bold mt-1 text-black 
+    shadow-[0_0_30px_#FFD859] bg-[radial-gradient(circle_at_top,#FFD859,#FFC003)]
+    sm:w-[75%] sm:h-[40px] sm:text-[13px]
+    md:w-[65%] md:h-[42px] md:text-[14px]
+    lg:w-[55%] lg:h-[44px] lg:text-[15px]
+    xl:w-[75%] xl:h-[46px] xl:text-[16px]
+    2xl:w-[60%] 2xl:h-[50px] 2xl:text-[17px]
+  "
+>
+  START FREE TRIAL
+</button>
+
   </div>
-  <div class="text-left mt-4">
-    <h4 class="text-[12px] font-bold text-white text-left">What's included in the subscription?</h4>
+
+  <p class="mt-1 text-center text-[8px] text-[#6E6E6E] max-w-[400px] lg:w-[170px] 2xl:w-[300px] xl:text-[9px] 2xl:text-[12px]">
+    Service charges PKR 35 (tax inclusive) will be deducted 
+    from your Jazz Cash wallet every week.
+  </p>
+</div>
+
+
+
+
+
+
+        
+      <div class="w-full mt-6 px-1">
+ 
+  <div class="flex items-center gap-3 mt-4 mb-2 whitespace-nowrap">
+    <div
+      class="w-[28px] h-[28px] xl:w-[22px] xl:h-[22px] 2xl:w-[36px] 2xl:h-[36px] lg:w-[25px] lg:h-[25px]  bg-cover bg-center flex-shrink-0"
+      style="background-image: url('./images/i1.svg');"
+    ></div>
+    <p class="text-white text-[13px]  text-left 2xl:text-[18px] xl:text-[13px] lg:text-[12px]">
+      Play Unlimited Popular <span class="text-[#FFCA20]">Mobile Games</span>
+    </p>
+  </div>
+
+  <div class="flex items-center gap-3 mt-7 mb-1 whitespace-nowrap">
+    <div
+      class="w-[28px] h-[28px] xl:w-[22px] xl:h-[22px] 2xl:w-[36px] 2xl:h-[36px] lg:w-[25px] lg:h-[25px]  bg-cover bg-center flex-shrink-0"
+      style="background-image: url('./images/i2.svg');"
+    ></div>
+    <p class="text-white text-[13px]  text-left 2xl:text-[18px] xl:text-[13x] lg:text-[12px]">
+      Join Thrilling <span class="text-[#FFCA20]">Tournaments & Win Big</span>
+    </p>
+  </div>
+
+  <div class="flex items-center gap-3 mt-7 mb-1 whitespace-nowrap">
+    <div
+      class="w-[28px] h-[28px] xl:w-[22px] xl:h-[22px] 2xl:w-[36px] 2xl:h-[36px] lg:w-[25px] lg:h-[25px]  bg-cover bg-center flex-shrink-0"
+      style="background-image: url('./images/i3.svg');"
+    ></div>
+    <p class="text-white text-[13px] text-left 2xl:text-[18px] xl:text-[12px] lg:text-[12px]">
+      Grab Vouchers for <span class="text-[#FFCA20]">PUBG, FreeFire, PSN</span> & More
+    </p>
+  </div>
+
+  <div class="flex items-center gap-3 mt-7 mb-2 whitespace-nowrap">
+    <div
+      class="w-[28px] h-[28px] xl:w-[22px] xl:h-[22px] 2xl:w-[36px] 2xl:h-[36px] lg:w-[25px] lg:h-[25px]  bg-cover bg-center flex-shrink-0"
+      style="background-image: url('./images/i4.svg');"
+    ></div>
+    <p class="text-white text-[13px]  text-left 2xl:text-[18px] xl:text-[13px] lg:text-[12px]">
+      Play Unlimited Popular <span class="text-[#FFCA20]">Mobile Games</span>
+    </p>
+  </div>
+
+  <div class="w-full mt-8">
+    <div class="flex justify-between items-center w-full">
+      <h2 class="text-[20px] md:text-[27px] text-[#FFCA20] font-bold">FAQs</h2>
+      <div 
+        id="faq-toggle"
+        class="w-[20px] h-[16px] bg-cover bg-center cursor-pointer transition-transform duration-300 transform"
+        style="background-image: url('./images/aad.svg');"
+      ></div>
+    </div>
+
+   <div id="faq-content" class="hidden mt-4 text-left">
+  <div class="text-left">
+    <h4 class="text-[12px] md:text-[15px] font-bold text-white">What happens after 3-day free trial ends?</h4>
     <hr class="w-full border border-[#505050]/50 mt-3" />
-    <p class="text-white mt-2 text-[12px] text-left">Full access to GameNow without ads</p>
+    <p class="text-[12px] md:text-[15px] text-white mt-2">
+      Service charges PKR 35 (tax inclusive) will be <br/> deducted from your Jazz Cash wallet every week.
+    </p>
+  </div>
+
+  <div class="text-left mt-4">
+    <h4 class="text-[12px] md:text-[15px] font-bold text-white">What's included in the subscription?</h4>
+    <hr class="w-full border border-[#505050]/50 mt-3" />
+    <p class="text-[12px] md:text-[15px] text-white mt-2">
+      Full access to GameNow without ads
+    </p>
   </div>
 </div>
-        </div>
+
+  </div>
+</div>
+
+        
+      
+       
       </div>
     </div>
     <script>
       document.getElementById('faq-toggle').addEventListener('click', function() {
   const faqContent = document.getElementById('faq-content');
   const toggleIcon = this;
+
   
   faqContent.classList.toggle('hidden');
   
