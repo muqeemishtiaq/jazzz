@@ -16,12 +16,15 @@
         },
       };
     </script>
-    <style>
-      ::-webkit-scrollbar {
-  display: none;
-}
- 
-    </style>
+   <style>
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
@@ -32,7 +35,8 @@
     </head>
   <body class="font-outfit bg-black text-white  ">  
 
-<div class="h-screen w-full lg:w-[320px] xl:w-[360px] 2xl:w-[600px] mx-auto rounded-lg bg-cover bg-center bg-no-repeat flex flex-col"
+<div class="h-screen w-full lg:w-[320px] xl:w-[360px] 2xl:w-[600px] mx-auto rounded-lg bg-cover bg-center bg-no-repeat flex flex-col pb-20"
+
 
     style="background-image: url('./images/splash.png'); background-color: #000;"
   >
@@ -43,10 +47,10 @@
       
 <div
   class="
-    w-[300px] h-[40px]
+    w-[400px] h-[40px]
     sm:w-[450px] 
-    md:w-[390px] 
-    lg:w-[300px] 
+    md:w-[450px] 
+    lg:w-[480px] 
     xl:w-[380px] 
     2xl:w-[450px] 2xl:h-[60px]
     rounded-[4px] bg-no-repeat bg-center bg-contain mt-4
